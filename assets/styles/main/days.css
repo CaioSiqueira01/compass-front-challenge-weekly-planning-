@@ -1,0 +1,79 @@
+@import url("../root.css");
+
+.days{
+    display: flex;
+    align-items: center;
+}
+
+.days__hour{
+    height: 75px;
+    width: 85px;
+    border-radius: 10px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 24px 0px #A8A8A840;
+    margin-right: 15px;
+}
+
+.days__nav{
+    width: 95%;
+}
+
+.days__list{    
+    display: flex;
+    width:95%;
+    gap: 20px;
+    align-items: center;
+}
+
+.days__item{
+    height: 33px;
+    width: 150px;
+    box-shadow: 0px 4px 24px 0px #A8A8A840;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    color: var(--white);
+    font-size: 1.063rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.active{
+    height: 33px;
+    width: 200px;
+    box-shadow: 0px 4px 24px 0px #A8A8A840;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    color: var(--white);
+    font-size: 1.063rem;
+    font-weight: 700;
+}
+
+.Monday{
+    background-color: var(--btn-Monday);
+}
+.Tuesday{
+    background-color: var(--btn-Tuesday);
+}
+.Thursday{
+    background-color: var(--btn-Thursday);
+}
+.Wednesday{
+    background-color: var(--btn-Wednesday);
+}
+.Friday{
+    background-color: var(--btn-Friday);
+}
+.Saturday{
+    background-color: var(--btn-Saturday);
+}
+.Sunday{
+    background-color: var(--btn-Sunday);
+}
+

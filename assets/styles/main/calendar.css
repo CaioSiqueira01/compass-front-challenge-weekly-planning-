@@ -1,0 +1,146 @@
+@import url("../root.css");
+
+.calendar{
+    width: 98%;
+    padding-left: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 20px;
+    flex-direction: column;
+    height: 64.3vh;
+    max-height: 64.3vh;
+    overflow: scroll; 
+    transform: rotateX(180deg);
+    overflow-x: auto;
+}
+.calendar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.calendar::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+.calendar::-webkit-scrollbar-thumb {
+    background-color: #DCDFE3;
+    border-radius: 20px;
+    border: 3px solid #DCDFE3;
+    width: 8px;
+}
+
+.calendar__item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.calendar__hour{
+    height: 85px;
+    width: 85px;
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: center;
+    border-radius: 10px;
+}
+
+.calendar__hour--monday{
+    background-color: var(--monday-hour);
+}
+.calendar__hour--Tuesday{
+    background-color: var(--tuesday-hour);
+}
+.calendar__hour--Thursday{
+    background-color: var(--thursday-hour);
+}
+.calendar__hour--Wednesday{
+    background-color: var(--wednesday-hour);
+}
+.calendar__hour--Friday{
+    background-color: var(--friday-hour);
+}
+.calendar__hour--Saturday{
+    background-color: var(--saturday-hour);
+}
+.calendar__hour--Sunday{
+    background-color: var(--sunday-hour);
+}
+
+.calendar__hour--error{
+    background-color: var(--error-date);    
+}
+
+.calendar__content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(112.83deg, rgba(255, 255, 255, 0.3444) 0%, rgba(255, 255, 255, 0.336) 110.84%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    width: 512px;
+    box-shadow: 0px 1.9999998807907104px 5.499999523162842px 0px #00000005;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+}
+
+.calendar__status{
+    width: 14px;
+    height: 85px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.calendar__status--monday{
+    background-color: var(--btn-Monday);
+}
+.calendar__status--tuesday{
+    background-color: var(--btn-Tuesday);
+}
+.calendar__status--thursday{
+    background-color: var(--btn-Thursday);
+}
+.calendar__status--wednesday{
+    background-color: var(--btn-Wednesday);
+}
+.calendar__status--friday{
+    background-color: var(--btn-Friday);
+}
+.calendar__status--saturday{
+    background-color: var(--btn-Saturday);
+}
+.calendar__status--sunday{
+    background-color: var(--btn-Sunday);
+}
+
+.calendar__status--error{
+    background-color: var(--error);
+}
+
+.calendar__text{
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 80%;
+    word-wrap: break-word;
+    line-height: 20px;
+}
+
+.calendar__remove{
+    height: 25px;
+    width: 57px;
+    background-color: var(--delete);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    position: absolute;
+    left: 540px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.calendar__monday, .calendar__tuesday,.calendar__thursday,.calendar__wednesday,.calendar__friday,.calendar__saturday,.calendar__sunday{
+    min-height: 90vh;
+    width: 120%;
+    transform: rotateX(180deg);
+    padding-top: 30px;
+}

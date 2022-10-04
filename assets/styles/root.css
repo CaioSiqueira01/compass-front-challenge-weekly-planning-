@@ -1,0 +1,24 @@
+:root{
+    --blue-color: #6688FF;
+    --white: #FFFFFF;
+    --btn-add: #2CBE82;
+    --btn-remove:#DA2B40;
+    --timer: #3B3E45;
+    --btn-Monday: #FFA246;
+    --btn-Tuesday: #35E185;
+    --btn-Wednesday: #6688FF;
+    --btn-Thursday: #B266FF;
+    --btn-Friday: #66D1FF;
+    --btn-Saturday: #FF66D4;
+    --btn-Sunday: #FF6666;
+    --delete: #98031E;
+    --error: #F55D5D;
+    --monday-hour: #FFA24666;
+    --tuesday-hour: #35E18566;
+    --wednesday-hour: #6688FF66;
+    --thursday-hour: #B266FF66;
+    --friday-hour: #66D1FF66;
+    --saturday-hour: #FF66D466;
+    --sunday-hour: #FF666666;    
+    --background: #E5E5E5;
+}

@@ -1,0 +1,94 @@
+@import url("../root.css");
+
+body{
+    background-image: url("../../img/compass-logo.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: var(--white);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.activities{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 44px;
+}
+
+
+.activities__input{
+    height: 100%;
+}
+
+.add__activities{
+    width: 324px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--white);
+    border: 1px var(--btn-add) solid;
+    padding-left: 100px;
+    text-align: start;
+}
+.add__activities::placeholder{
+    color: #3B3E45;
+}
+
+.input__hour{
+    height: 100%;
+}
+
+.add__days{
+    height: 100%;
+    width: 210px;
+    border-radius: 10px;
+    border: 1px var(--btn-add) solid;
+    background-color: var(--white);
+    color: #3B3E45;
+    padding-left: 15px;
+}
+
+.add__hour{
+    height: 100%;
+    width: 102px;
+    border-radius: 10px;
+    border: 1px var(--btn-add) solid;
+    background-color: var(--white);
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.adding, .delete{
+    font-size: 1.5rem;
+}
+
+.add__btn, .add__remove{
+    height: 100%;
+    border-radius: 10px;
+    border: transparent;
+    font-size: 1.063rem;
+    font-weight: 400;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.add__btn{
+    width: 222px;
+    background-color: var(--btn-add);
+}
+
+.add__remove{
+    width: 184px;    
+    background-color: var(--btn-remove);    
+}
+
+.disable{
+    display: none;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/root.css">
+    <link rel="stylesheet" href="./assets/styles/header/header.css">
+    <link rel="stylesheet" href="./assets/styles/main/days.css">
+    <link rel="stylesheet" href="./assets/styles/main/form.css">
+    <link rel="stylesheet" href="./assets/styles/main/calendar.css">
+    <title>Planejamento Semanal</title>
+</head>
+<body>
+    <header>
+        <div class="container__menu">
+            <h1 class="menu__title">Planejamento Semanal</h1>
+            <p class="menu__description">Utilize o formulário para adicionar novas tarefas:</p>
+        </div>
+        <div class="buttons">
+            <button class="button__save-stg" onclick=saveLocalStorage()>Salvar localStorage</button>
+            <button class="button__remove-stg" onclick=deleteLocalStorage()>Excluir localStorage</button>
+        </div>
+        <div class="clock">
+            <h3 class="hour"></h3>
+            <p class="date"></p>
+        </div>
+    </header>
+    <main>
+        <form onsubmit="" class="activities">
+            <div class="activities__input">
+                <input type="text" placeholder="Atividade" class="add__activities" autofocus>
+            </div>            
+            <select name="days" id="days" class="add__days">
+                <option value="Segunda-Feira" class="days">Segunda-Feira</option>
+                <option value="Terça-Feira" class="days">Terça-Feira</option>
+                <option value="Quarta-Feira" class="days">Quarta-Feira</option>
+                <option value="Quinta-Feira" class="days">Quinta-Feira</option>
+                <option value="Sexta-Feria" class="days">Sexta-Feria</option>
+                <option value="Sabado" class="days">Sábado</option>
+                <option value="Domingo" class="days">Domingo</option>
+            </select> 
+            <div class="input__hour">
+                <input type="time" value="00:00" class="add__hour">
+            </div>            
+            <button class="add__btn"><i class="adding">&#43;</i> Adicionar Atividade</button>
+            <button class="add__remove"><i class="delete">&#8722;</i> Excluir Todos</button>
+        </form>
+        <section class="days">
+            <div class="days__hour">
+                <h3>Horário</h3>
+            </div>
+            <nav class="days__nav">
+                <ul class="days__list">
+                    <li class="days__item Monday active">Segunda-Feira</li>
+                    <li class="days__item Tuesday">Terça-Feira</li>
+                    <li class="days__item Thursday">Quarta-Feira</li>
+                    <li class="days__item Wednesday">Quinta-Feira</li>
+                    <li class="days__item Friday">Sexta-Feria</li>
+                    <li class="days__item Saturday ">Sábado</li>
+                    <li class="days__item Sunday">Domingo</li>
+                </ul>
+            </nav>
+        </section>
+        <section class="calendar">
+            <div class="calendar__monday"></div>
+            <div class="calendar__tuesday disable"></div>
+            <div class="calendar__thursday disable"></div>
+            <div class="calendar__wednesday disable"></div>
+            <div class="calendar__friday disable"></div>
+            <div class="calendar__saturday disable"></div>
+            <div class="calendar__sunday disable"></div>
+        </section>
+    </main>
+    <script src="./assets/scripts/header/hour.js"></script>
+    <script src="./assets/scripts/header/date.js"></script>
+    <script src="./assets/scripts/main/main.js"></script>
+    <script src="./assets/scripts/main/day.js"></script>    
+    <script src="./assets/scripts/main/deleteAllBtn.js"></script>    
+    <script src="./assets/scripts/main/localStorage.js"></script>
+</body>
+</html>
